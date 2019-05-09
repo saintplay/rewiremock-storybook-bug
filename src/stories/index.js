@@ -1,9 +1,6 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
-import rewiremock from "rewiremock/webpack";
-
-import "./lib";
-import "./ComponentExample";
+import rewiremock from "rewiremock";
 
 const ComponentExample = rewiremock.proxy(
   () => require("./ComponentExample"),
